@@ -26,7 +26,7 @@ document.getElementById("guesses").innerHTML = "Remaining letters left: " + gues
 
 document.onkeyup = function (event) {
     guessLeft--;
-    document.getElementById("guesses").innerHTML = "Remaining letters left: " + guessLeft;
+    document.getElementById("guesses").innerHTML = "Number of guesses left: " + guessLeft;
 
     var userLetter = event.key;
     console.log(userLetter);
