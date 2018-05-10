@@ -14,16 +14,18 @@
 
 <body>
     <div id="guess word">
-        <h1>Name the Legendary Soccer Player</h1>
-        
+        <h1>Name the Player</h1>
+
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 text-center">
-                <button class="btn btn-primary form-control" id="startButton">Start</button>
+            <div id="col1" class="col-sm-6 text-center">
+
+                <!-- <button class="btn btn-primary form-control" id="startButton">Start</button> -->
                 <div class="well text-center">
                     <div>
+                        <p>Player name to guess</p>
                         <p id="playerText">Click the button to start the game</p>
                         <p id="guesses">number</p>
                         <p>Letters already guessed:</p>
@@ -31,10 +33,38 @@
                     </div>
                 </div>
             </div>
+            <div id="col2" class="col-sm-6">
+                <p>Hint: Plyer picture:</p>
+                
+                    <img id="playerImage" src="http://via.placeholder.com/200x200">
+                
+                <br>
+            </div>
         </div>
     </div>
     <style>
-        
+        h1 {
+            text-align: center;
+            margin: 40px;
+            padding: 20px;
+            background-color: #4aaaa5;
+            border: 2px solid;
+            border-color: #cccccc;
+            font-family: 'Georgia', Times, Times New Roman, serif;
+            color: white;
+
+        }
+        #col1, #col2{
+            border: 5px dashed #cccccc;
+            font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        }
+        p{
+            padding: 30px;
+            font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        }
+        #playerImage {
+            padding: 20px;      
+        }
     </style>
 
     <script type="text/javascript" src="assets/javascript/game.js"></script>
