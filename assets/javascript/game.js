@@ -18,10 +18,11 @@ var lettersGuessed = [];
 var player = soccerPlayers[Math.floor((Math.random() * soccerPlayers.length))];
 console.log(player)
 var str = "*".repeat(player.length);
-var guessLeft = 15;
+var guessLeft = 20;
 
 document.getElementById("playerText").innerHTML = str;
 document.getElementById("guesses").innerHTML = "Remaining letters left: " + guessLeft;
+
 
 
 document.onkeyup = function (event) {
@@ -73,6 +74,7 @@ document.onkeyup = function (event) {
         document.getElementById("playerImage").src = "assets/images/ronaldinho.jpg";
         alert ("seems like you need some help! This image should help")
     }
+
 }
 
 String.prototype.replaceAt = function (index, replacement) {
